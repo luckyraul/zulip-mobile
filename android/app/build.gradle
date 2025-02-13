@@ -147,8 +147,8 @@ android {
         applicationId "com.mygento.zulip"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 231
-        versionName "27.231"
+        versionCode 233
+        versionName "27.233"
     }
     signingConfigs {
         // The RN v0.60 template app suggests configuring a debug

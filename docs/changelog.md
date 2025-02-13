@@ -40,6 +40,58 @@ It doesn't include
 ## Unreleased
 
 
+## 27.233 (2025-02-11)
+
+### Highlights for users
+
+* Updated translations for Danish, Spanish, Japanese, Polish, Russian,
+  Ukrainian, and Chinese (China). Thanks as always to our kind volunteer
+  translators!
+
+* Fixed a recent glitch affecting some self-hosted installations
+  running Zulip from Git, where reactions weren't live-updating in
+  the message view. (#5911)
+
+
+### Highlights for developers
+
+* Updated CI to use JDK 17, from 11, fixing a CI failure. (#5913)
+
+* Resolved issues: #5913, #5911
+
+
+## 27.232 (2024-11-13)
+
+### Highlights for users
+
+* (Android) Fixed a crash on Android 14+ when downloading an image from the
+  lightbox screen. (#5903)
+* Updated translations for Czech, Polish, and Russian. Thanks as always to
+  our kind volunteer translators!
+
+
+### Highlights for developers
+
+* We now handle user-deactivated events by removing the user from groups,
+  as required for Zulip Server 10 (feature level 303). (#5899)
+
+* Switched to a patched rn-fetch-blob to fix an Android 14+ crash. (#5903)
+
+* (Android) Upgraded SoLoader, as prompted by a Google Play warning. (#5901)
+
+* (Android build) Updated `tools/checkout-keystore` to work with modern `sq`.
+  (PR #5896)
+
+* (iOS build) Fix a build failure in the '[CP-User] Generate Specs' script
+  that appeared when we started building RN from Git. (PR #5896)
+
+* (iOS build) Updated CocoaPods from 1.15.2 to 1.16.2. (#5907)
+
+* Updated rollup to 3.x, from the last 2.x. (PR #5894)
+
+* Resolved issues: #5899, #5903
+
+
 ## 27.231 (2024-09-30)
 
 ### Highlights for users
